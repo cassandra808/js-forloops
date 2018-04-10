@@ -83,10 +83,11 @@ Write a for-loop that will push even numbers to the `evenNumArr` array. We want 
 Console.log your results.
 */
 var evenNumArr = []
-console.log (evenNumArr);
 
 for (var i = 0; i < 101; i++){
-  evenNumArr += i%
+  if (i%2  === 0){
+    evenNumArr.push(i)
+  }
 }
 console.log (evenNumArr)
 
