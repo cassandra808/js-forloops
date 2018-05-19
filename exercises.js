@@ -192,8 +192,20 @@ console.log (copyValuesArray)
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
+var topQuote = "be the change you wish to see in the world"
 
+function findLongestWord (str){
+  var strSplit = str.split(" ");
+  var longestWord = "";
+  for (var i = 0; i < strSplit.length; i++){
+  if (strSplit[i].length > longestWord.length){
+    longestWord = strSplit[i];
+       }
+    }
+  return longestWord;
+}
 
+console.log (findLongestWord (topQuote))
 
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
